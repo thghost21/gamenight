@@ -1,5 +1,6 @@
 import { AppState } from "../AppState.js";
 import { Player } from "../models/Player.js";
+import { playersService } from "../services/PlayersService.js";
 
 export class PlayersController {
   constructor() {
@@ -22,6 +23,8 @@ export class PlayersController {
 
   scorePoint(playerName) {
     console.log('Clicked Button', playerName)
+    playersService.scorePoint(playerName)
+    this.drawPlayers()
   }
 
 }

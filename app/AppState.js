@@ -10,6 +10,9 @@ class ObservableAppState extends EventEmitter {
     new Player("Tyler"),
     new Player("james"),
     new Player("jeff"),
+    new Player("joff"),
+    new Player("jif"),
+    new Player("geff"),
     new Player("kelly")
   ];
 }
